@@ -3,7 +3,7 @@
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const cv = document.createElement('canvas');
   cv.setAttribute('aria-hidden', 'true');
-  cv.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:80;pointer-events:none';
+  cv.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:10001;pointer-events:none';
   document.body.appendChild(cv);
   const ctx = cv.getContext('2d');
   let W = 0, H = 0, dpr = 1, parts = [], raf = 0;
@@ -64,6 +64,9 @@
     setTimeout(() => { burst(-1, n * .6); burst(1, n * .6); }, 380);
   };
   window.firePopper = pop;
+
+  // Ada layar pembuka: ledakan tepat saat dibuka, bersamaan dengan balon naik
+  if (document.getElementById('gate')) { addEventListener('gateopen', () => setTimeout(pop, 120), { once: true }); return; }
 
   // mulai setelah animasi masuk hero siap
   const hero = document.querySelector('.hero');

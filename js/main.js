@@ -151,6 +151,12 @@
     measure();
     ST.addEventListener('refreshInit', measure);
 
+    // section yang sudah tertutup penuh oleh section berikutnya: sembunyikan (tidak digambar, animasi dijeda)
+    stack.forEach((s, i) => ST.create({
+      start: () => nat[i + 1] + 6, end: () => ST.maxScroll(window) + 100000, invalidateOnRefresh: true,
+      onToggle: self => s.classList.toggle('is-covered', self.isActive)
+    }));
+
     // posisi natural elemen di dokumen (tidak terpengaruh sticky/transform)
     const natY = el => {
       let y = 0, n = el;

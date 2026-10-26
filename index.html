@@ -29,6 +29,46 @@ scrollTo(0, 0);
 </head>
 <body>
 <div class="progress" aria-hidden="true"></div>
+<!-- 0. LAYAR PEMBUKA (tap pertama = musik bisa menyala) -->
+<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="Ada kejutan kecil buat kamu">
+  <div class="fbg" aria-hidden="true">
+   <div class="fbg__stage">
+    <img class="fbg__base" src="assets/images/finale/bg/base.webp" alt="" fetchpriority="low" decoding="async">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b1.webp" alt="" fetchpriority="low" decoding="async" style="left:8.288%;top:0.000%;width:15.014%;height:45.169%;--o:50% 0%;--dur:4.2s;--dl:-0.0s;--dir:1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b2.webp" alt="" fetchpriority="low" decoding="async" style="left:45.380%;top:0.000%;width:8.628%;height:29.469%;--o:50% 0%;--dur:4.6s;--dl:-0.9s;--dir:-1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b3.webp" alt="" fetchpriority="low" decoding="async" style="left:55.571%;top:0.000%;width:17.935%;height:63.406%;--o:50% 0%;--dur:4.9s;--dl:-1.8s;--dir:1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b4.webp" alt="" fetchpriority="low" decoding="async" style="left:85.938%;top:0.000%;width:14.062%;height:47.947%;--o:100% 0%;--dur:5.3s;--dl:-2.7s;--dir:-1">
+    <img class="fb" src="assets/images/finale/bg/b5.webp" alt="" fetchpriority="low" decoding="async" style="left:20.924%;top:7.246%;width:18.682%;height:69.686%;--o:50% 55%;--dur:5.7s;--dl:-3.6s;--dir:1">
+    <img class="fb" src="assets/images/finale/bg/b6.webp" alt="" fetchpriority="low" decoding="async" style="left:74.660%;top:11.353%;width:6.929%;height:11.473%;--o:50% 55%;--dur:6.1s;--dl:-4.5s;--dir:-1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b7.webp" alt="" fetchpriority="low" decoding="async" style="left:0.000%;top:24.517%;width:9.375%;height:46.739%;--o:0% 55%;--dur:6.4s;--dl:-0.4s;--dir:1">
+    <img class="fb" src="assets/images/finale/bg/b8.webp" alt="" fetchpriority="low" decoding="async" style="left:71.467%;top:31.039%;width:13.451%;height:56.039%;--o:50% 55%;--dur:6.8s;--dl:-1.3s;--dir:-1">
+    <img class="fb" src="assets/images/finale/bg/b9.webp" alt="" fetchpriority="low" decoding="async" style="left:43.954%;top:35.266%;width:16.508%;height:64.130%;--o:50% 55%;--dur:4.6s;--dl:-2.2s;--dir:1">
+    <img class="fb" src="assets/images/finale/bg/b10.webp" alt="" fetchpriority="low" decoding="async" style="left:5.163%;top:51.208%;width:7.677%;height:15.459%;--o:50% 55%;--dur:4.9s;--dl:-3.1s;--dir:-1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b11.webp" alt="" fetchpriority="low" decoding="async" style="left:93.410%;top:55.676%;width:6.590%;height:25.242%;--o:100% 55%;--dur:5.3s;--dl:-4.0s;--dir:1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b12.webp" alt="" fetchpriority="low" decoding="async" style="left:10.326%;top:62.198%;width:13.315%;height:37.802%;--o:50% 100%;--dur:5.7s;--dl:-4.9s;--dir:-1">
+    <img class="fb" src="assets/images/finale/bg/b13.webp" alt="" fetchpriority="low" decoding="async" style="left:39.062%;top:64.372%;width:8.492%;height:16.304%;--o:50% 55%;--dur:6.0s;--dl:-0.8s;--dir:1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b14.webp" alt="" fetchpriority="low" decoding="async" style="left:79.552%;top:66.425%;width:17.255%;height:33.575%;--o:50% 100%;--dur:6.4s;--dl:-1.7s;--dir:-1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b15.webp" alt="" fetchpriority="low" decoding="async" style="left:28.125%;top:87.077%;width:15.965%;height:12.923%;--o:50% 100%;--dur:6.8s;--dl:-2.6s;--dir:1">
+    <img class="fb fb--edge" src="assets/images/finale/bg/b16.webp" alt="" fetchpriority="low" decoding="async" style="left:2.853%;top:92.995%;width:9.375%;height:7.005%;--o:50% 100%;--dur:4.5s;--dl:-3.5s;--dir:-1">
+   </div>
+  </div>
+  <div class="gate__box">
+    <div class="gg" aria-hidden="true">
+      <div class="gg__pile" style="left:1.03%;top:20.59%;width:98.28%;height:79.41%">
+        <img class="gg__img" src="assets/images/gate/g3.webp" alt="" decoding="async">
+        <img class="gg__img gg__bow" src="assets/images/gate/g3.webp" alt="" decoding="async">
+      </div>
+      <img class="gg__c gg__c1" src="assets/images/gate/g1.webp" alt="" decoding="async" style="left:65.86%;top:0.00%;width:14.83%;height:22.27%;--bx:-67px;--by:116px">
+      <img class="gg__c gg__c2" src="assets/images/gate/g2.webp" alt="" decoding="async" style="left:14.14%;top:4.62%;width:17.59%;height:26.89%;--bx:79px;--by:100px">
+      <img class="gg__c gg__c3" src="assets/images/gate/g5.webp" alt="" decoding="async" style="left:86.55%;top:28.99%;width:13.45%;height:28.57%;--bx:-125px;--by:40px">
+      <img class="gg__c gg__c4" src="assets/images/gate/g7.webp" alt="" decoding="async" style="left:0.00%;top:42.44%;width:13.10%;height:28.15%;--bx:126px;--by:8px">
+      <img class="gg__s gg__s1" src="assets/images/gate/g4.webp" alt="" decoding="async" style="left:75.86%;top:21.01%;width:9.66%;height:11.76%">
+      <img class="gg__s gg__s2" src="assets/images/gate/g6.webp" alt="" decoding="async" style="left:9.66%;top:32.77%;width:10.00%;height:12.18%">
+    </div>
+    <button class="gate__btn" id="gateBtn" type="button">Buka kejutannya</button>
+  </div>
+</div>
+
 
 <!-- 1. HERO -->
 <header class="hero">
@@ -107,14 +147,14 @@ scrollTo(0, 0);
   <div class="party__bg" aria-hidden="true">
    <div class="party__stage">
     <img class="party__bgimg" src="assets/images/backgrounds/party-bg.webp" width="735" height="460" loading="lazy" decoding="async" alt="">
-    <i class="pet" style="--cx:27.9%;--cy:26%;--rx:14.5%;--ry:23%;--dur:5.2s;--dl:0s;--rot:2.2deg;--sc:1.05"></i>
-    <i class="pet" style="--cx:52.4%;--cy:15.2%;--rx:11%;--ry:17%;--dur:4.6s;--dl:-1.4s;--rot:2.8deg;--sc:1.06"></i>
-    <i class="pet" style="--cx:76.2%;--cy:16.3%;--rx:15%;--ry:20%;--dur:5.8s;--dl:-2.6s;--rot:2deg;--sc:1.045"></i>
-    <i class="pet" style="--cx:17%;--cy:51%;--rx:15%;--ry:22%;--dur:5.0s;--dl:-0.8s;--rot:2.4deg;--sc:1.05"></i>
-    <i class="pet" style="--cx:87%;--cy:54%;--rx:17%;--ry:27%;--dur:6.2s;--dl:-3.1s;--rot:1.8deg;--sc:1.04"></i>
-    <i class="pet" style="--cx:25%;--cy:86%;--rx:13%;--ry:19%;--dur:4.8s;--dl:-1.9s;--rot:2.6deg;--sc:1.055"></i>
-    <i class="pet" style="--cx:47.6%;--cy:88%;--rx:11.5%;--ry:17%;--dur:4.4s;--dl:-0.4s;--rot:3deg;--sc:1.06"></i>
-    <i class="pet" style="--cx:68.7%;--cy:83.7%;--rx:11.5%;--ry:17%;--dur:5.4s;--dl:-2.3s;--rot:2.6deg;--sc:1.055"></i>
+    <i class="pet" style="left:13.40%;top:3.00%;width:29.00%;height:46.00%;background-size:344.8% 217.4%;background-position:18.87% 5.56%;--dur:5.2s;--dl:0s;--rot:2.2deg;--sc:1.05"></i>
+    <i class="pet" style="left:41.40%;top:-1.80%;width:22.00%;height:34.00%;background-size:454.5% 294.1%;background-position:53.08% -2.73%;--dur:4.6s;--dl:-1.4s;--rot:2.8deg;--sc:1.06"></i>
+    <i class="pet" style="left:61.20%;top:-3.70%;width:30.00%;height:40.00%;background-size:333.3% 250.0%;background-position:87.43% -6.17%;--dur:5.8s;--dl:-2.6s;--rot:2deg;--sc:1.045"></i>
+    <i class="pet" style="left:2.00%;top:29.00%;width:30.00%;height:44.00%;background-size:333.3% 227.3%;background-position:2.86% 51.79%;--dur:5.0s;--dl:-0.8s;--rot:2.4deg;--sc:1.05"></i>
+    <i class="pet" style="left:70.00%;top:27.00%;width:34.00%;height:54.00%;background-size:294.1% 185.2%;background-position:106.06% 58.70%;--dur:6.2s;--dl:-3.1s;--rot:1.8deg;--sc:1.04"></i>
+    <i class="pet" style="left:12.00%;top:67.00%;width:26.00%;height:38.00%;background-size:384.6% 263.2%;background-position:16.22% 108.06%;--dur:4.8s;--dl:-1.9s;--rot:2.6deg;--sc:1.055"></i>
+    <i class="pet" style="left:36.10%;top:71.00%;width:23.00%;height:34.00%;background-size:434.8% 294.1%;background-position:46.88% 107.58%;--dur:4.4s;--dl:-0.4s;--rot:3deg;--sc:1.06"></i>
+    <i class="pet" style="left:57.20%;top:66.70%;width:23.00%;height:34.00%;background-size:434.8% 294.1%;background-position:74.29% 101.06%;--dur:5.4s;--dl:-2.3s;--rot:2.6deg;--sc:1.055"></i>
    </div>
     <b class="petal" style="--x:33%;--s:16px;--d:12s;--dl:-12s;--sw:39px;--c:#ffffff"></b>
     <b class="petal" style="--x:11%;--s:10px;--d:17s;--dl:-17s;--sw:81px;--c:#ffffff"></b>
@@ -160,6 +200,8 @@ scrollTo(0, 0);
 
 <!-- 8. FINALE: kue ulang tahun (tap untuk tiup lilin) -->
 <section class="finale" aria-labelledby="fin-t">
+  <div class="bunting" aria-hidden="true"></div>
+  <div class="rise-hearts" aria-hidden="true"><span class="rise-heart rise-heart--1" aria-hidden="true"></span><span class="rise-heart rise-heart--2" aria-hidden="true"></span><span class="rise-heart rise-heart--3" aria-hidden="true"></span><span class="rise-heart rise-heart--4" aria-hidden="true"></span><span class="rise-heart rise-heart--5" aria-hidden="true"></span></div>
   <div class="blow-area" id="blowArea" role="button" tabindex="0" aria-label="Tiup lilin"></div>
   <div class="cake">
     <div class="candles-container" id="candles" aria-hidden="true"></div>
@@ -332,6 +374,7 @@ scrollTo(0, 0);
 <script src="js/vendor/gsap.min.js" defer></script>
 <script src="js/vendor/ScrollTrigger.min.js" defer></script>
 <script src="js/vendor/lenis.min.js" defer></script>
+<script src="js/gate.js" defer></script>
 <script src="js/main.js" defer></script>
 <script src="js/cake.js" defer></script>
 <script src="js/popper.js" defer></script>

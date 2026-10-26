@@ -48,10 +48,12 @@
       cv.width = Math.round(w * r); cv.height = Math.round(h * r); W = cv.width; H = cv.height;
     };
     new ResizeObserver(size).observe(cv); size();
+    let inView = true;                                               // gambar hanya saat kartu terlihat
+    new IntersectionObserver(es => { inView = es[0].isIntersecting; }).observe(cv);
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     function draw(ts) {
       requestAnimationFrame(draw);
-      if (!W || ts - last < 33) return; last = ts;                  // ~30 fps cukup
+      if (!W || ts - last < 33 || !inView || document.hidden || cv.closest('.is-covered')) return; last = ts;                  // ~30 fps cukup
       const playing = box.classList.contains('is-playing') && !au.paused && !reduce, t = ts / 1000;
       ctx.clearRect(0, 0, W, H); ctx.fillStyle = '#fff';
       const pitch = W / N, bw = pitch * .5;
